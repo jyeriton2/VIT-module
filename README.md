@@ -5,6 +5,6 @@ Implementation of Vision Transformer, a simple way to achieve SOTA in vision cla
 
 For a Pytorch implementation with pretrained models, please see Ross Wightman's repository here
 
-the source made by 'lucidrains'
+the source made by 'rwightman'
 
-url : https://github.com/lucidrains/vit-pytorch/blob/main/README.md
+url : https://github.com/rwightman/pytorch-image-models
