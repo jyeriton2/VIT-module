@@ -18,6 +18,8 @@ if __name__ == '__main__':
     gpus = '1'
     device = torch.device('cuda:{}'.format(gpus) if torch.cuda.is_available() else 'cpu')
     os.environ['CUDA_VISIBLE_DEVICES'] = gpus
+    
+    # gpu 할당 시 os.environ에 사용하고자하는 gpu만 적어두고 torch Tensor를 .cuda()로 해버리면 바로 알아서 잡음.
 
     torch.cuda.set_device(device)
     print('Current cuda device' , torch.cuda.current_device())
